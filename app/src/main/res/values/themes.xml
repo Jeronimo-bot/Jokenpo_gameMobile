@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Jokenpo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <!-- Fonte personalizada para todo o aplicativo -->
+        <item name="android:fontFamily">@font/font</item>
+    </style>
+
+    <style name="Theme.Jokenpo" parent="Base.Theme.Jokenpo" />
+
+    <!-- Tema para a Splash Screen -->
+    <style name="SplashTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Defina a cor de fundo da splash screen -->
+        <item name="android:windowBackground">@color/background_color</item>
+        <item name="android:fontFamily">@font/font</item> <!-- Opcional: mantenha a mesma fonte -->
+    </style>
+</resources>

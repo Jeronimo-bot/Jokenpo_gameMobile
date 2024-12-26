@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+    <!-- TextView para o cronômetro -->
+
+    <TextView
+        android:id="@+id/tv_cronometro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="10"
+        android:textColor="@color/text_color"
+        android:textSize="72sp" />
+
+    <TextView
+        android:id="@+id/tv_oponente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/text_color" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your move to face the opponent!"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/text_color" />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player: 0 | Opponent: 0"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/text_color" />
+
+    <!-- Espaço extra para empurrar os botões para baixo -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Layout Vertical para Pedra -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_pedra"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/pedra1"
+                android:scaleType="fitXY"
+                android:contentDescription="Imagem de Pedra" />
+
+            <Button
+                android:id="@+id/btn_pedra"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Rock"
+                android:textSize="19sp"
+                android:background="@color/primary_color"
+                android:textColor="@color/text_color" />
+
+        </LinearLayout>
+
+        <!-- Layout Vertical para Papel -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+
+            <ImageView
+                android:id="@+id/img_papel"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/papel1"
+                android:scaleType="fitXY"
+                android:contentDescription="Imagem de Papel" />
+
+            <Button
+                android:id="@+id/btn_papel"
+                android:layout_width="100dp"
+                android:textSize="19sp"
+                android:layout_height="wrap_content"
+                android:text="Paper"
+                android:background="@color/primary_color"
+                android:textColor="@color/text_color"/>
+
+        </LinearLayout>
+
+        <!-- Layout Vertical para Tesoura -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/img_tesoura"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/tesoura1"
+                android:scaleType="fitXY"
+                android:contentDescription="Imagem de Tesoura" />
+
+            <Button
+                android:id="@+id/btn_tesoura"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Scissors"
+                android:textSize="18sp"
+                android:background="@color/primary_color"
+                android:textColor="@color/text_color"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_proximo_oponente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Opponent"
+        android:visibility="gone"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:background="@color/primary_color"
+        android:textColor="@color/text_color" />
+
+    <!-- Espaço extra para empurrar os botões mais para cima -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

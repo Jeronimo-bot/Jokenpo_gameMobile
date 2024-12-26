@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Cores existentes -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="background">#483848</color>
+    <color name="cor_final">#483848</color>
+    <color name="navigation_bar_color">#080808</color>
+    <color name="navigation_bar_border_color">#020304</color>
+
+    <!-- Nova cor -->
+    <color name="background_color">#483848</color>
+    <color name="primary_color">#483848</color>
+    <color name="text_color">#FFFFFF</color> <!-- Cor de texto contrastante para visibilidade -->
+</resources>
